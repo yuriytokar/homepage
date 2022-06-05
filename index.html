@@ -2,9 +2,204 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Résumé</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
+
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    ― Hello World! &#x1F609;
+
+    <script src="../homepage/scriptonit.js"></script>
+    <script src="https://kit.fontawesome.com/762fb18b8f.js" crossorigin="anonymous"></script>
+   
+    <div id="Layer1" style="position:absolute; left:621px; top:-4px; width:54px; height:98px; z-index:1"></div>
+    <main>
+      <div class="resume">
+        <div class="container">
+          
+            <h1 class="contact-info__header">Токар Юрій</h1>
+            <div class="resume__block">
+              <a href="#info" class="btn">
+                Про мене
+              </a>
+            <h3 class="contact-info__sub-header">Учасник Mobile треку в Binary Studio Academy</h3>
+    
+            
+            <div class="contact_info_container fh">
+              <div class="contact-info__block contact-info__block--center">
+                <img class="contact-info__avatar" src="assets/myFace.png" alt="Avatar">
+              </div>
+              <div class="contact-info__block">
+                
+                <li  class="fa-solid fa-envelope">  <span>tokar.yurii@student.uzhnu.edu.ua</span> </li>
+                <li  class="fa-brands fa-instagram-square"><a href="https://www.instagram.com/aintr_jovic/" class="contact-info__block">aintr_jovic</a>   </li>
+                <li  class="fa-brands fa-telegram"> <span>@mirrorfor</span> </li>
+                <li  class="fa-solid fa-location-dot">  <span>Тячів</span> </li>
+                <li   class="fa-solid fa-mobile-button">  <span>+380 976 783 801</span> </li>
+               
+                  
+              </div>
+              
+
+              
+              
+    
+              <div class="contact-info__block"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="resume__block">
+            <div class="intro">
+              <div class="intro__icon-wrapper">
+                <svg class="intro__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path
+                    d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
+                  </path>
+                </svg>
+              </div>
+              <p id="info" class="intro_text">Привіт!
+                Мене звати Юра. Я студент УжНУ, закінчив 1 курс спеціальності "комп'ютерні науки". Професіонал з виводу хелло вордів на C#, C++, Python і навіть Java &#x1F609;. Трохи знайомий з олімпіадним програмуванням на C++. Самостійно вивчаю js, html, css. Дуже вдячний Binary за круту можливість розвиватись і отримувати справжнє задоволення від процесу.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="resume__block">
+            <div class="skills">
+              <h3 class="skills__header">Skills</h3>
+              <p class="skills__text">
+                 JavaScript(на рівні початківця),C#/C++(основи),Python(базове знання синтаксису)HTML/CSS. Маю знання алгоритмів, структур даних та загальних принципів організації коду, розумію принципи ООП. 
+                 IDE, з якими вмію працювати: Intellij Idea, Web Storm, Visual Studio Code, Sublime Text, CodeBlocks.
+                Soft skills (Булка-сет&#128568;): Sleep, eat, more sleep, meow (із західним акцентом &#129325;), mrrr, purr. </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="resume__block">
+            <div class="main-info fh">
+        
+              <div class="experiences">
+                <h3 class="experiences__header">Experience</h3>
+                <div class="experiences__company">
+                  <div class="experiences__company-header">
+                    <span class="experiences__company-header-durability">Учень, студент</span>
+                    <h3 class="experiences__company-header-name">УжНУ</h3>
+                  </div>
+              
+                  <div class="experiences__company-project">
+                    <h3 class="experiences__company-project-name">Мої проекти, якими я пишаюсь:</h3>
+                    <ul class="experiences__company-project-responsibilities">
+                      <li>Школа (закінчена з відзнакою)</li>
+                      <li>Контрольні роботи з інформатики в школі</li>
+                      <li>Призові місця на олімпіадах з інформатики (теж у школі)</li>
+                      <li>Лабки в універі</li>
+                      <li>Постійний саморозвиток (проект ще в розробці)</li>
+                    </ul>
+                  </div>
+                </div>
+                <div id="clock"></div>
+                <script>
+                  function currentTime() {
+      var date = new Date(); /* создаем объект класса Date() */
+      var hour = date.getHours();
+      var min = date.getMinutes();
+      var sec = date.getSeconds();
+      hour = updateTime(hour);
+      min = updateTime(min);
+      sec = updateTime(sec);
+      document.getElementById("clock").innerText = hour + " : " + min + " : " + sec; /* adding time to the div */
+      var t = setTimeout(function(){ currentTime() }, 1000); /* настраиваем таймер */
+      hour = (hour == 0) ? 12 : ((hour > 12) ? (hour - 12): hour);
+    }
+    
+    function updateTime(k) {
+      if (k < 10) {
+        return "0" + k;
+      }
+      else {
+        return k;
+      }
+    }
+    
+    currentTime();
+                </script>
+              </div>
+             
+
+        
+              <div class="additional-info fv">
+                <div class="additional-info__education">
+                  <h3 class="additional-info__education-header">Education</h3>
+                  <div class="additional-info__education-university">
+                    <span class="additional-info__education-university-durability">2021</span>
+                    <h3 class="additional-info__education-university-speciality">УжНУ</h3>
+                    <p class="additional-info__education-university-name">1 курс, Комп'ютерні науки</p>
+                  </div>
+                </div>
+              
+                <div class="additional-info__languages">
+                  <h3 class="additional-info__languages-header">Languages</h3>
+                  <p class="additional-info__languages-item">
+                    Transcarpathian dialect
+                  </p>
+                  <p class="additional-info__languages-item">
+                    Ukrainian 
+                  </p>
+                  <p class="additional-info__languages-item">
+                    English (B1)
+                  </p>
+                </div>
+                <div class="additional-info fv">
+                  <div class="additional-info__education">
+                    <h3 class="additional-info__education-header">Hobby</h3>
+                    <div class="additional-info__education-university">
+                      <h3 class="additional-info__education-university-speciality">Гра на музичних інструментах: </h3>
+                      <p class="additional-info__education-university-name">Гітара, скрипка, (нерви оточуючих?&#129300;)</p>
+                    </div>
+                  </div>
+                
+                 
+                </div>
+              </div>
+            </div>
+              <div class="pz">
+                <a id="submit" href="#bk"><span>Ого! Ви ще тут?! Тримайте винагороду!</span> </a>
+              </div>
+              <script>
+                document.querySelector("#submit").onclick = function(){
+                  document.getElementsByClassName('prize')[0].style.display = "block";
+
+}
+              </script>
+
+
+              <div id="bk" class="prize">
+                <img src="../homepage/assets/булочка.png" alt="">
+              </div>
+
+
+
+          </div>
+        </div>
+       
+        
+      </div>
+    
+    </main>
+    
+
+
+
+
+
+
+   
   </body>
 </html>
