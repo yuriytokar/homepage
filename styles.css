@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,18 +7,67 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../homepage/assets/bolshaya-medvedica-sozvezdie.jpg);
+    font-family: 'Prompt', sans-serif;
     line-height: 1.5;
 
-    --primary-text-color: #181820;
-    --secondary-text-color: #5c5c62;
+
+    --primary-text-color: #f8eded;
+    --secondary-text-color: #bea67c;
     --durability-text-color: #6a737d9c;
     --icon-color: #6a737d;
-    --border-color: #ff9a0045;
-    --text-decoration-color: #ff9a00;
+    --border-color: #865cab45;
+    --text-decoration-color: #6a737d9c;
 }
 
+canvas {
+    margin:0 auto;
+    display:block;
+  }
+
+#clock {
+  font-family: 'Orbitron', sans-serif;
+  color: #66ff99;
+  font-size: 56px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.btn{
+    text-decoration: none;
+    margin: 0 auto;
+    display: block;
+    background: #ff5441;
+    color: white;
+    padding: 18px 20px;
+    width: 240px;
+    max-width: 100%;
+    border-radius: 28px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 900;
+    border: 0;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    box-shadow: 0px 0px 38px 0px rgba(212, 66, 50, 0.9);
+    transition: all .2s;
+    text-align: center;
+
+
+}
+.btn:hover{
+    background: #df4537;
+    color: cadetblue;
+}
+.btn:active{
+    opacity: 0.7;
+    color: #1f1f1f;
+    transform: scale(.95);
+}
+
+
 .container {
+    
     margin: 0 auto;
     padding: 0 30px;
     max-width: 900px;
@@ -35,9 +86,11 @@ body {
 }
 
 .resume {
+
     margin: 50px auto;
     border: 1px solid #f5f5f5;
-    box-shadow: 1px 1px 7px 7px #f5f5f5;
+    background-color: #212529;
+    box-shadow: 1px 1px 7px 7px #3f6cac;
     padding: 30px 0;
     max-width: 900px;
 }
@@ -88,6 +141,8 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      color: #ffd700;
+      font-size: 20px;
   }
 
   .contact-info__block--center {
@@ -120,14 +175,14 @@ body {
       height: 1.1428rem;
       vertical-align: text-bottom;
   }
-
+  
   .contact-info__avatar {
       border-radius: 50%;
-      width: 100px;
-      height: 100px;
+      width: 200px;
+      height: 200px;
       object-fit: cover;
-      border: 3px solid;
-      border-color: var(--text-decoration-color);
+      border: 10px solid;
+      border-color: #6a737d9c;
   }
   .intro {
     display: flex;
